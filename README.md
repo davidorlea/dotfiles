@@ -1,0 +1,2 @@
+# dotfiles
+Syncing bash profiles
