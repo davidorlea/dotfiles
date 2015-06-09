@@ -7,6 +7,10 @@ alias .4='cd ../../../../'		# Go back 4 directory levels
 alias .5='cd ../../../../../'		# Go back 5 directory levels
 alias .6='cd ../../../../../../'	# Go back 6 directory levels
 
+# Display of directory contents
+alias ll='ls -l'			# List in long format
+alias la='ls -la'			# List in long format including hidden entries
+
 # Shortcuts
 alias c='clear'				# c: Clears the screen
 alias f='open -a Finder ./'		# f: Opens current directory in MacOS Finder
