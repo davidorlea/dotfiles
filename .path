@@ -1,0 +1,6 @@
+# Add ~/bin
+export PATH="$HOME/bin:$PATH"
+
+# Add Android SDK
+export PATH="$PATH:$HOME/Library/Android/sdk/tools"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
