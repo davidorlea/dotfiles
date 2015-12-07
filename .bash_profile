@@ -1,12 +1,13 @@
-# Use custom prompt
-if [ -f ~/.bash_prompt ]; then
-  . ~/.bash_prompt
-fi
+# Load the dotfiles like ~/.bash_prompt etc.
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # Increase size of bash history
 HISTFILESIZE=1000
 
-# Use additional custom aliases
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
