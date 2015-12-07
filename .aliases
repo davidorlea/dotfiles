@@ -16,7 +16,7 @@ alias c='clear'				# c: Clears the screen
 alias f='open -a Finder ./'		# f: Opens current directory in MacOS Finder
 alias g='git'				# g: Runs git
 alias h='history'			# h: Displays shell history
-alias j='jobs'				# j: 
+alias j='jobs'				# j: Lists all currently executing jobs
 alias s='subl'				# s: Opens any file in sublime editor
 alias v='vim'				# v: Open VI Improved
 
