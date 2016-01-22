@@ -10,6 +10,7 @@ alias .6='cd ../../../../../../'	# Go back 6 directory levels
 # Display of directory contents
 alias ll='ls -l'			# List in long format
 alias la='ls -la'			# List in long format including hidden entries
+alias lr='la -R'			# List recursively in long format including hidden entries
 
 # Shortcuts
 alias c='clear'				# c: Clears the screen
