@@ -1,34 +1,34 @@
 # Movement through directories
-alias cd..='cd ../'			# Go back 1 directory level (for fast typers)
-alias ..='cd ../'			# Go back 1 directory level
-alias ...='cd ../../'			# Go back 2 directory levels
-alias .3='cd ../../../'			# Go back 3 directory levels
-alias .4='cd ../../../../'		# Go back 4 directory levels
-alias .5='cd ../../../../../'		# Go back 5 directory levels
-alias .6='cd ../../../../../../'	# Go back 6 directory levels
+alias cd..='cd ../'                 # Go back 1 directory level (for fast typers)
+alias ..='cd ../'                   # Go back 1 directory level
+alias ...='cd ../../'               # Go back 2 directory levels
+alias .3='cd ../../../'             # Go back 3 directory levels
+alias .4='cd ../../../../'          # Go back 4 directory levels
+alias .5='cd ../../../../../'       # Go back 5 directory levels
+alias .6='cd ../../../../../../'    # Go back 6 directory levels
 
 # Display of directory contents
-alias ll='ls -l'			# List in long format
-alias la='ls -la'			# List in long format including hidden entries
-alias lr='la -R'			# List recursively in long format including hidden entries
+alias ll='ls -l'                    # List in long format
+alias la='ls -la'                   # List in long format including hidden entries
+alias lr='la -R'                    # List recursively in long format including hidden entries
 
 # Shortcuts
-alias c='clear'				# c: Clears the screen
-alias f='open -a Finder ./'		# f: Opens current directory in MacOS Finder
-alias g='git'				# g: Runs git
-alias h='history'			# h: Displays shell history
-alias j='jobs'				# j: Lists all currently executing jobs
-alias s='subl'				# s: Opens any file in sublime editor
-alias v='vim'				# v: Open VI Improved
+alias c='clear'                     # c: Clears the screen
+alias f='open -a Finder ./'         # f: Opens current directory in MacOS Finder
+alias g='git'                       # g: Runs git
+alias h='history'                   # h: Displays shell history
+alias j='jobs'                      # j: Lists all currently executing jobs
+alias s='subl'                      # s: Opens any file in sublime editor
+alias v='vim'                       # v: Open VI Improved
 
 # Docker
-alias dk='docker'			# dk: Runs Docker
-alias dki='docker images'	# dki: Lists Docker images
-alias dkp='docker ps'		# dip: Lists Docker containers
+alias dk='docker'                   # dk: Runs Docker
+alias dki='docker images'           # dki: Lists Docker images
+alias dkp='docker ps'               # dip: Lists Docker containers
 
 # Networking
-alias eip='curl ip.appspot.com'		# Fetch external IP address
-alias iip='ipconfig getifaddr en0'	# Fetch internal IP address
+alias eip='curl ip.appspot.com'     # Fetch external IP address
+alias iip='ipconfig getifaddr en0'  # Fetch internal IP address
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"	# Flush Directory Service cache
 
 # Recursively delete `.DS_Store` files
