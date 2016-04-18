@@ -21,6 +21,11 @@ alias j='jobs'				# j: Lists all currently executing jobs
 alias s='subl'				# s: Opens any file in sublime editor
 alias v='vim'				# v: Open VI Improved
 
+# Docker
+alias dk='docker'			# dk: Runs Docker
+alias dki='docker images'	# dki: Lists Docker images
+alias dkp='docker ps'		# dip: Lists Docker containers
+
 # Networking
 alias eip='curl ip.appspot.com'		# Fetch external IP address
 alias iip='ipconfig getifaddr en0'	# Fetch internal IP address
