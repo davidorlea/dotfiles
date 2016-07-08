@@ -48,7 +48,7 @@ alias week='date +%V'
 
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
-alias badge="tput bel"
+alias chill="tput bel"
 
 # Mute volume
 alias stfu="osascript -e 'set volume output muted true'"
