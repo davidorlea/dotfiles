@@ -1,0 +1,11 @@
+google-chrome() {
+	if [[ $1 == "--unsafe" ]]; then
+		if pgrep procname Google\ Chrome > /dev/null; then
+			echo Chrome is already running
+		else
+ 			open -a Google\ Chrome --new --args --disable-web-security -–allow-file-access-from-files
+ 		fi
+	else
+		open -a Google\ Chrome --new
+	fi
+}
