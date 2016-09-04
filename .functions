@@ -9,3 +9,10 @@ google-chrome() {
 		open -a Google\ Chrome --new
 	fi
 }
+
+jhome() {
+	export JAVA_HOME=`/usr/libexec/java_home $@`
+	echo "Setting up JAVA environment."
+	echo "JAVA_HOME \"${JAVA_HOME}\""
+	java -version
+}
