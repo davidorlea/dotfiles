@@ -1,0 +1,32 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = subl -n -w
+[push]
+	default = current
+	followTags = true
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	br = branch
+	cm = commit
+	co = checkout
+	st = status
+	mf = merge --no-ff
+	pft = push --follow-tags
+	unstage = reset HEAD --
+	last = log -1 HEAD
