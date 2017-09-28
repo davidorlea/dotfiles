@@ -34,9 +34,9 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"	# Flush Dire
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
-# Start Google Chrome (with disabled security checks)
+# Start web browsers
 alias chrome="google-chrome"
-alias chrome-unsafe="google-chrome --unsafe"
+alias firefox="mozilla-firefox"
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"

@@ -10,6 +10,10 @@ google-chrome() {
 	fi
 }
 
+mozilla-firefox() {
+	open -a Firefox --new
+}
+
 jhome() {
 	export JAVA_HOME=`/usr/libexec/java_home $@`
 	echo "Setting up JAVA environment."
