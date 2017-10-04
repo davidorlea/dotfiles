@@ -3,15 +3,16 @@ google-chrome() {
 		if pgrep procname Google\ Chrome > /dev/null; then
 			echo Chrome is already running
 		else
- 			open -a Google\ Chrome --new --args --disable-web-security -–allow-file-access-from-files
- 		fi
+			shift
+			open -a Google\ Chrome --new --args --disable-web-security -–allow-file-access-from-files $@
+		fi
 	else
-		open -a Google\ Chrome --new
+		open -a Google\ Chrome --new --args $@
 	fi
 }
 
 mozilla-firefox() {
-	open -a Firefox --new
+	open -a Firefox --new --args $@
 }
 
 jhome() {
