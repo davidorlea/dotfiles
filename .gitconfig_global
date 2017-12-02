@@ -25,6 +25,7 @@
 	br = branch
 	cm = commit
 	co = checkout
+	fa = "!find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch -v --all --prune --recurse-submodules"
 	last = log -1 HEAD
 	mf = merge --no-ff
 	pft = push --follow-tags
