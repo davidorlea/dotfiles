@@ -25,8 +25,8 @@
 	br = branch
 	cm = commit
 	co = checkout
-	st = status
+	last = log -1 HEAD
 	mf = merge --no-ff
 	pft = push --follow-tags
+	st = status
 	unstage = reset HEAD --
-	last = log -1 HEAD
