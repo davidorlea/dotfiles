@@ -23,9 +23,9 @@ alias s='subl'                      # s: Opens any file in sublime editor
 alias v='vim'                       # v: Open VI Improved
 
 # Networking
-alias eip='curl ip.appspot.com'     # Fetch external IP address
-alias iip='ipconfig getifaddr en0'  # Fetch internal IP address
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"	# Flush Directory Service cache
+alias eip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias iip='ipconfig getifaddr en0'
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
