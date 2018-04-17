@@ -54,3 +54,7 @@ alias chill="tput bel"
 
 # Mute volume
 alias stfu="osascript -e 'set volume output muted true'"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
