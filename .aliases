@@ -14,17 +14,13 @@ alias lr='la -R'                    # List recursively in long format including 
 
 # Shortcuts
 alias c='clear'                     # c: Clears the screen
+alias d='docker'					# d: Runs Docker
 alias f='open -a Finder ./'         # f: Opens current directory in MacOS Finder
 alias g='git'                       # g: Runs git
 alias h='history'                   # h: Displays shell history
 alias j='jobs'                      # j: Lists all currently executing jobs
 alias s='subl'                      # s: Opens any file in sublime editor
 alias v='vim'                       # v: Open VI Improved
-
-# Docker
-alias dk='docker'                   # dk: Runs Docker
-alias dki='docker images'           # dki: Lists Docker images
-alias dkp='docker ps'               # dip: Lists Docker containers
 
 # Networking
 alias eip='curl ip.appspot.com'     # Fetch external IP address
