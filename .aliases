@@ -40,6 +40,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 # Add to grep: color, line numbers, context of 1 line
 alias grep="grep --color -n -B 1"
 
+# URL-encode strings
+alias urlenc='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
 # Get week number
 alias week='date +%V'
 
