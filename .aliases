@@ -12,6 +12,9 @@ alias ll='ls -l'                    # List in long format
 alias la='ls -la'                   # List in long format including hidden entries
 alias lr='la -R'                    # List recursively in long format including hidden entries
 
+# Add to grep: color, line numbers, context of 1 line
+alias grep="grep --color -n -B 1"
+
 # Shortcuts
 alias c='clear'                     # c: Clears the screen
 alias d='docker'					# d: Runs Docker
@@ -30,17 +33,14 @@ alias flush="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
-# Start web browsers
-alias chrome="google-chrome"
-alias firefox="mozilla-firefox"
-
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
-# Add to grep: color, line numbers, context of 1 line
-alias grep="grep --color -n -B 1"
+# Start web browsers
+alias chrome="google-chrome"
+alias firefox="mozilla-firefox"
 
 # URL-encode strings
 alias urlenc='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
