@@ -6,8 +6,5 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# Increase size of bash history
-HISTFILESIZE=1000
-
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;

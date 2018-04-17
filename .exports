@@ -1,0 +1,2 @@
+# Increase size of bash history
+export HISTFILESIZE=1000
