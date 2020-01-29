@@ -15,3 +15,7 @@ Thumbs.db
 # Development
 .idea
 .sublime-gulp.cache
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
