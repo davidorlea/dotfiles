@@ -7,3 +7,6 @@ export HISTFILESIZE="${HISTSIZE}";
 
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
+
+# Set language
+export LANG='en_US.UTF-8'
