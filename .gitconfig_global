@@ -25,9 +25,10 @@
 	br = branch
 	cm = commit
 	co = checkout
-	fa = "!find . -name .git -type d | xargs -n1 -I% git --git-dir=% --work-tree=%/.. fetch -v --all --prune --recurse-submodules"
+	fa = "!find . -name .git -type d -maxdepth 2 | sort | xargs -n1 -I {} git --git-dir={} --work-tree={}/.. fetch -v --all --prune --recurse-submodules"
 	last = log -1 HEAD
 	mf = merge --no-ff
+	pa = "!find . -name .git -type d -maxdepth 2 | sort | xargs -n1 -I {} git --git-dir={} --work-tree={}/.. pull -v --all --prune --recurse-submodules"
 	pft = push --follow-tags
 	st = status
 	unstage = reset HEAD --
